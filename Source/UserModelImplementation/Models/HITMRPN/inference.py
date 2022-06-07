@@ -54,8 +54,10 @@ class HITMRPNInterface(jf.UserTemplate.ModelHandlerTemplate):
         # return loss
         # args = self.__args
         label_gt = torch.ones([output_data[0].shape]).to(output_data[0].device)
-        loss1 = F.cross_entropy(output_data[1], label_gt)
-        return []
+        loss2 = F.cross_entropy(output_data[1], label_gt)
+        loss1 = F.smooth_l1_loss(output_data[0], label_data[0])
+        loss = 0.1 * loss1 + loss2
+        return [loss]
 
     # Optional
     def pretreatment(self, epoch: int, rank: object) -> None:
