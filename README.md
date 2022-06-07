@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Template-jf
 [![Use the JackFramework Demo](https://github.com/Archaic-Atom/FrameworkTemplate/actions/workflows/build_env.yml/badge.svg?event=push)](https://github.com/Archaic-Atom/FrameworkTemplate/actions/workflows/build_env.yml)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg?style=plastic)
@@ -294,3 +295,6 @@ Template-jf
 2. Use a new code style;
 3. Build the frameworks for pythorch;
 4. Write ReadMe
+=======
+# HITMRPN
+>>>>>>> 299d5bebc11429721274db73ea5ff85e7f42e7f4
